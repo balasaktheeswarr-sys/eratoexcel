@@ -8,6 +8,21 @@ Uploads are parsed in memory and are not written to disk. The sample file and
 automated tests use synthetic names and identifiers only. Claim identifiers are
 masked in the Streamlit preview.
 
+```markdown
+## Tools and Tech Stack
+
+- **Python** — core application and parsing logic.
+- **Streamlit** — web interface for uploading ERA files, previewing results, and downloading the workbook.
+- **Pandas** — organizes parsed data into tables.
+- **OpenPyXL** — formats and generates the Excel workbook.
+- **Pytest** — tests the parser and workbook generation.
+- **X12 835** — the remittance advice format processed by the application.
+
+## Backend Logic
+
+The application validates uploaded X12 835 files, detects their delimiters, and checks transaction envelope information. It extracts payment, claim, service-line, adjustment, and remark data, while reporting validation issues. The Streamlit interface displays data previews and masks claim identifiers. Pandas and OpenPyXL then create a formatted Excel workbook in memory, ready to download.
+```
+
 ## Project layout
 
 ```text
