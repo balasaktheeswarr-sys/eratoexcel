@@ -6,8 +6,7 @@ line, adjustment, and validation information.
 
 Uploads are parsed in memory and are not written to disk. The sample file and
 automated tests use synthetic names and identifiers only. Claim identifiers are
-masked in the Streamlit preview. This project does not claim HIPAA compliance;
-do not upload real patient data while learning or testing the application.
+masked in the Streamlit preview.
 
 ## Project layout
 
